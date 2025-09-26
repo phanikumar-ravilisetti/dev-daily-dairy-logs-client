@@ -32,7 +32,7 @@ const EditLogsPage = () => {
   useEffect(() => {
     const fetchLog = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/logs/edit/${id}`, {
+        const response = await fetch(`https://dev-daily-dairy-logs-server.onrender.com/logs/${id}`, {
           method: 'GET',
           headers: {
             "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const EditLogsPage = () => {
     setError("");
 
     try {
-      const response = await fetch(`http://localhost:5000/logs/${id}`, {
+      const response = await fetch(`https://dev-daily-dairy-logs-server.onrender.com/logs/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
