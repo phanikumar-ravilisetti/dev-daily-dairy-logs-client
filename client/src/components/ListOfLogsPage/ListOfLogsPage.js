@@ -48,7 +48,7 @@ const ListOfLogsPage = () => {
 
   const onClickDelete = async (id) => {
     try {
-       const response = await fetch(`http://localhost:5000/logs/delete/${id}`, {
+       const response = await fetch(`https://dev-daily-dairy-logs-server.onrender.com/logs/delete/${id}`, {
         method: 'DELETE',
         headers: {
             "Content-Type": "application/json",

@@ -32,7 +32,7 @@ const EditLogsPage = () => {
   useEffect(() => {
     const fetchLog = async () => {
       try {
-        const response = await fetch(`https://dev-daily-dairy-logs-server.onrender.com/logs/${id}`, {
+        const response = await fetch(`https://dev-daily-dairy-logs-server.onrender.com/logs/edit/${id}`, {
           method: 'GET',
           headers: {
             "Content-Type": "application/json",

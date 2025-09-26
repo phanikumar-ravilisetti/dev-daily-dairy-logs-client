@@ -31,9 +31,10 @@ const LoginPage = () => {
       const data = await response.json();
       if (response.ok) {
       localStorage.setItem("userId", data.user._id);
-      console.log(data.token);
+      
       Cookies.set("jwt_token", data.token, {expires: 1});
-        alert("Login Successful");
+        console.log(Cookies.get("jwt_token"));
+      alert("Login Successful");
         history.replace("/home");
       } else {
         setError(data.error);
