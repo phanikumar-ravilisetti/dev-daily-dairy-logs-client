@@ -21,7 +21,7 @@ const ListOfLogsPage = () => {
       try {
         const userId = localStorage.getItem("userId");
         const token = Cookies.get("jwt_token");
-        const response = await fetch(`http://localhost:5000/logs/${userId}`, {
+        const response = await fetch(`https://dev-daily-dairy-logs-server.onrender.com/logs/${userId}`, {
           method: 'GET',
           headers: {
             "Content-Type": "application/json",

@@ -40,7 +40,7 @@ const StandupForm = () => {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:5000/logs", {
+      const response = await fetch("https://dev-daily-dairy-logs-server.onrender.com/logs", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
